@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: url('/images/bgmain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+.logo {
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 26px 50px;
+    padding: 14px 37px;
+    border-radius: 10px;
+    background-color: #2C9645;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+
+}
+
+.account-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 2px;
+    color: white;
+}
+
+.content {
+    display: flex;
+
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    margin-top: 7%;
+    width: 50%;
+}
+
+.right .main-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: white
+}
+
+.right bold {
+    font-family: 'Montserrat';
+    color: #FFFBFF;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.play {
+    background-color: #89FFFF;
+    width: 280px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.under-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 16px;
+}
+
+.case-facts {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    bottom: 10%;
+    margin-left: 100px;
+    width: 50%;
+}
+
+.fact {
+    width: 170px;
+}
+
+.fact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    color: white;
+
+}
+
+.fact-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #E0E0E0;
+}
+
+.roullete {
+    display: none;
+    flex-direction: column;
+    background: url('/images/bgroulette.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.rolling {
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+.roullete-line {
+    border: 2px solid #89FFFF;
+    width: 740px;
+    height: 230px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.round-1 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #89FFFF;
+    border-radius: 100px;
+    top: -15px;
+}
+
+.round-2 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #89FFFF;
+    border-radius: 100px;
+    bottom: -15px;
+}
+
+.line {
+    content: "";
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    background-color: #89FFFF;
+}
+
+.card {
+    min-width: 148px;
+    min-height: 192px;
+    background: url('/images/cardbg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.weapon {
+    text-align: center;
+}
+
+.weapon-img {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #FFFBFF;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.finish {
+    display: none;
+    flex-direction: column;
+    background: url('/images/bgfinal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.finish-wrapper {
+    border: 2px solid #89FFFF;
+    border-radius: 20px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #222A68 0%, #000000 100%),
+        linear-gradient(0deg, #89FFFF, #89FFFF);
+
+}
+
+.prize-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #FFFBFF;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.prize {
+
+    display: flex;
+    justify-content: center;
+}
+
+.attention-wrapper {
+    border: 2px solid #E35428;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px 100px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attention-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #E35428
+}
+
+.attention-text {
+    text-align: center;
+    width: 450px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: white;
+    margin-top: 10px;
+}
+
+@media (min-height: 1040px) {
+    .case-facts {
+        bottom: 4%;
+    }
+}
+
+@media (min-height: 1021px) {
+    .case-facts {
+        bottom: 4%;
+    }
+}
+
+@media (max-height: 750px) {
+    .case-facts {
+        bottom: 1%;
+    }
+}
