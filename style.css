@@ -9,7 +9,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    background: url('./images/bgmain.png');
+    background: url(images/bgmain.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -146,7 +146,7 @@
 .roullete {
     display: none;
     flex-direction: column;
-    background: url('./images/bgroulette.png');
+    background: url(images/bgroulette.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -207,7 +207,7 @@
 .card {
     min-width: 148px;
     min-height: 192px;
-    background: url('./images/cardbg1.png');
+    background: url(images/cardbg1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -235,7 +235,7 @@
 .finish {
     display: none;
     flex-direction: column;
-    background: url('./images/bgfinal.png');
+    background: url(images/bgfinal.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
