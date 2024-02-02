@@ -9,15 +9,102 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    background: url(images/bgmain.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background: linear-gradient(180deg, #222A68 6.5%, #040305 100%);
+    overflow: auto;
+}
+
+.elipses img,
+.elipses-bg img {
+    position: absolute;
+}
+
+.elipses-bg {
+    top: 0;
+}
+
+.akcase {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+}
+
+.case {
+    position: absolute;
+    right: -60px;
+
+}
+
+.fact-bg {
+    background: #222A68;
+    height: 200px;
+    position: absolute;
+    width: 90%;
+    bottom: 6%;
+    border-radius: 20px;
+    z-index: 1;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weapon-brd {
+    border: 2px solid #89FFFF;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145.03deg, rgba(222, 76, 141, 0) 8.17%, rgba(222, 76, 141, 0.0457649) 25.04%, rgba(222, 76, 141, 0.104302) 39.15%, rgba(222, 76, 141, 0.129091) 44.58%, rgba(222, 76, 141, 0.179606) 55.63%, rgba(222, 76, 141, 0.594603) 77.53%, #DE4C8D 86.17%, #DE4C8D 92.83%);
+    z-index: 1;
+}
+
+.weapon-one {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    width: 96px;
+    height: 96px;
+}
+
+.weapon-two {
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    width: 148px;
+    height: 148px;
+}
+
+.weapon-three {
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    width: 96px;
+    height: 96px;
+}
+
+.weapon-four {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 96px;
+    height: 96px;
+}
+
+.weapon-brd img {
+    width: 90%;
+}
+
+.smoke {
+    position: absolute;
+    top: 37%;
+    z-index: 0;
 }
 
 .header {
@@ -34,9 +121,15 @@
 }
 
 .logo {
-    padding: 20px 50px;
+    margin: 20px 50px;
+    width: 343px;
+    height: 60px;
     cursor: pointer;
+    background: url(images/mainlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
 
 .account {
     display: flex;
@@ -64,6 +157,7 @@
 
 .content {
     display: flex;
+    z-index: 3;
 
 }
 
@@ -103,27 +197,29 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
+    margin-left: 50%;
     cursor: pointer;
+    z-index: 3;
 }
 
 .under-button {
     font-size: 20px;
     font-weight: 600;
     color: white;
-    margin-left: 16px;
+    margin-left: 50%;
+
 }
 
 .case-facts {
-    position: absolute;
     display: flex;
-    justify-content: space-around;
-    bottom: 10%;
-    margin-left: 100px;
-    width: 50%;
+
+    width: 100%;
+    gap: 10%;
 }
 
 .fact {
     width: 170px;
+    z-index: 1;
 }
 
 .fact-title {
@@ -175,6 +271,7 @@
     flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
+    background: linear-gradient(0deg, rgba(4, 3, 5, 0.6), rgba(4, 3, 5, 0.6));
 
 }
 
@@ -307,20 +404,246 @@
     margin-top: 10px;
 }
 
-@media (min-height: 1040px) {
+@media (max-width: 768px) {
+
+    .elipses-bg,
+    .elipses-bg img,
+    .elipses,
+    .elipses img {
+        width: 100%;
+    }
+
+    .akcase img {
+        width: 200px;
+    }
+
+    .akcase {
+        top: 24%;
+
+    }
+
+    .case img {
+        width: 180px;
+    }
+
+    .case {
+        position: relative;
+        right: 0;
+    }
+
+    .weapon-one {
+        top: 19%;
+        left: 3%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-two {
+        top: 23%;
+        left: 72%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .weapon-three {
+        top: 32%;
+        left: 40%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-four {
+        top: 36%;
+        left: 64%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .smoke img {
+        width: 100%;
+        height: 258px;
+    }
+
+    .smoke {
+        top: 32%;
+    }
+
+    .wrapper {
+        background: linear-gradient(180deg, #000000 11%, #222A68 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logo {
+        width: 150px;
+        height: 30px;
+        background: url(images/logomobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 20px;
+    }
+
+    .account {
+        margin: 10px 20px;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+    .right {
+        width: auto;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .right-text {
+        text-align: right;
+
+    }
+
+    .right bold {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+
+    .right .main-text {
+        width: 270px;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+
+    .play {
+        margin-top: 242px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 7px;
+        width: 260px;
+        height: 40px;
+        font-weight: 800;
+    }
+
+    .under-button {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    .fact-bg {
+        height: 537px;
+        width: 260px;
+        margin: 20px auto;
+        bottom: 0;
+        position: relative;
+        padding: 0;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     .case-facts {
-        bottom: 4%;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .fact-title {
+        font-size: 28px;
+        line-height: 56px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+    }
+
+    .fact-sub {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #E0E0E0;
     }
 }
 
-@media (min-height: 1021px) {
-    .case-facts {
-        bottom: 4%;
+@media (max-width: 768px) {
+    .roullete {
+        background: url(images/bgroulettemobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .roullete-line {
+        flex-direction: column;
+        margin: 50px 0 150px;
+        width: 260px;
+        height: 630px;
+        background: linear-gradient(0deg, rgba(4, 3, 5, 0.6), rgba(4, 3, 5, 0.6));
+    }
+
+    .rolling {
+        position: absolute;
+        top: 52%;
     }
 }
 
-@media (max-height: 750px) {
-    .case-facts {
-        bottom: 1%;
+@media (max-width: 768px) {
+    .finish {
+        background: url(images/bgroulettemobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+
+    .finish-wrapper {
+        width: 260px;
+        height: 430px;
+    }
+
+    .account {
+        margin: 20px 20px;
+    }
+
+    .attention-wrapper {
+        width: 260px;
+        background: linear-gradient(0deg, #040305, #040305);
+        margin: 10px;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    .attention-text {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: auto;
     }
 }
