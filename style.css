@@ -617,11 +617,34 @@
     }
 
     .roullete-line {
-        flex-direction: column;
+
         margin: 50px 0 150px;
         width: 260px;
         height: 630px;
         background: linear-gradient(0deg, rgba(4, 3, 5, 0.6), rgba(4, 3, 5, 0.6));
+    }
+    .round-1{
+        right: -15px;
+        top: 50%;
+    }
+    .round-2{
+        left: -15px;
+        top: 50%;
+    }
+    .line{
+        height: 2px;
+        width: 100%;
+        top: calc(50% + 15px);
+    }
+    .cards{
+        flex-direction: column;
+        width: 260px;
+        height: 630px;
+        left: 50px;
+        top: 240px;
+    }
+    .card{
+        margin-bottom: 10px;
     }
 
     .rolling {
