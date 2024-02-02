@@ -20,7 +20,7 @@ const rightText = document.querySelector('.right-text')
             var cards_block = document.querySelector('.cards');
             var cards = document.querySelectorAll('.cards > .card');
     
-            var random = Math.floor(Math.random() * (10 - 0) + 0)
+            var random = Math.floor(Math.random() * (10 - 2) + 2)
             
             console.log(cards[random],random)
             setTimeout(function() {
