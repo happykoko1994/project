@@ -299,19 +299,41 @@
     position: absolute;
     height: 100%;
     background-color: #89FFFF;
+    z-index: 2;
 }
 
 .card {
-    min-width: 148px;
-    min-height: 192px;
-    background: url(images/cardbg1.png);
+    max-width: 148px;
+    max-height: 192px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+
+}
+.card-image{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
+    position: absolute;
+    top: 0;
+    max-width: 148px;
+    max-height: 192px;
+    z-index: -1;
+}
+
+.cards{
+    display: flex;
+	position: absolute;
+	left: 300px;
+	top: 25px;
+	width: 2000px;
+	height: 100%;
+	transition: 5s ease;
 }
 
 .weapon {
     text-align: center;
+    z-index: 1;
 }
 
 .weapon-img {
@@ -327,6 +349,7 @@
     color: #FFFBFF;
     margin-top: 20px;
     text-align: center;
+    z-index: 1;
 }
 
 .finish {
