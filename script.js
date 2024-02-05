@@ -35,12 +35,13 @@ const rightText = document.querySelector('.right-text')
                         prize.append(cards_block.children[random])
                         roullete.style.display = 'none'
                         finish.style.display = 'flex'
+                        localStorage.setItem('rolls', true);
                       }, 6000);
                 
         
                   }, 500)
         
-                  localStorage.setItem('rolls', true);
+                  
             })
         }else{
             console.log('mobile');
@@ -69,6 +70,7 @@ const rightText = document.querySelector('.right-text')
                         prize.append(cards_block.children[random])
                         roullete.style.display = 'none'
                         finish.style.display = 'flex'
+                        localStorage.setItem('rolls', true);
                       }, 6000);
                 
         
@@ -76,7 +78,7 @@ const rightText = document.querySelector('.right-text')
         
                   
             })
-            localStorage.setItem('rolls', true);
+            
 
         }
     }else{
