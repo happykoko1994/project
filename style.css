@@ -430,7 +430,9 @@
 }
 
 @media (max-width: 768px) {
-
+    .bgmain{
+        
+    }
     .elipses-bg,
     .elipses-bg img,
     .elipses,
@@ -607,7 +609,7 @@
         color: #E0E0E0;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 380px){
     .akcase {
         top: 32%;
 
@@ -639,6 +641,39 @@
         width: 63px;
         height: 63px;
     }
+}
+@media (max-height: 750px){
+    .akcase {
+        top: 32%;
+
+    }
+    .weapon-one {
+        top: 24%;
+        left: 3%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-two {
+        top: 34%;
+        left: 72%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .weapon-three {
+        top: 43%;
+        left: 40%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-four {
+        top: 51%;
+        left: 64%;
+        width: 63px;
+        height: 63px;
+    }  
 }
 
 @media (max-width: 768px) {
