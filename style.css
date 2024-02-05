@@ -766,3 +766,8 @@
         width: auto;
     }
 }
+@media (max-height: 750px){
+.cards{
+    top: -30px;
+}
+}
