@@ -207,6 +207,7 @@
     font-weight: 600;
     color: white;
     margin-left: 50%;
+    z-index: 3;
 
 }
 
@@ -430,9 +431,6 @@
 }
 
 @media (max-width: 768px) {
-    .bgmain{
-        
-    }
     .elipses-bg,
     .elipses-bg img,
     .elipses,
