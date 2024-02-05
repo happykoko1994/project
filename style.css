@@ -303,6 +303,7 @@
 }
 
 .card {
+    min-width: 148px;
     max-width: 148px;
     max-height: 192px;
     margin-right: 10px;
@@ -325,8 +326,9 @@
     display: flex;
 	position: absolute;
 	left: -20px;
+    /* left: 300px; */
 	top: 25px;
-	width: 2000px;
+	width: auto;
 	height: 100%;
 	transition: 5s ease;
 }
@@ -677,7 +679,7 @@
         width: 260px;
         height: 630px;
         left: 50px;
-        top: 240px;
+        top: 40px;
     }
     .card{
         margin-bottom: 10px;

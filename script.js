@@ -8,7 +8,7 @@ const rightText = document.querySelector('.right-text')
     const factBg = document.querySelector('.fact-bg')
     const play = document.querySelector('.play')
     const prize = document.querySelector('.prize')
-    
+
     if(window.screen.availWidth>768){
         button.addEventListener('click',()=>{
             rightText.style.display = 'none'
@@ -16,18 +16,24 @@ const rightText = document.querySelector('.right-text')
             play.style.display = 'none'
             bgmain.style.display = 'none'
             roullete.style.display = 'flex'
-    
-            var cards_block = document.querySelector('.cards');
-            var cards = document.querySelectorAll('.cards > .card');
-    
-            var random = Math.floor(Math.random() * (10 - 2) + 2)
+            let cards_block = document.querySelector('.cards');
+            let cards = document.querySelectorAll('.cards > .card'); 
+
+            for (let index = 0; index < cards.length; index++) {
+                let new_element = cards[index].cloneNode(true);
+                cards_block.append(new_element); 
+                
+            }
+            console.log(cards_block.children.length)
+
+            let random = Math.floor(Math.random() * (cards_block.children.length - 11) + 11)
             
-            console.log(cards[random],random)
+            console.log(cards_block.children[random],random)
             setTimeout(function() {
     
                 cards_block.style.left =Math.floor(Math.random() * (350 - 250) + 250)-random * 158 + 'px';
                 setTimeout(() => {
-                    prize.append(cards[random])
+                    prize.append(cards_block.children[random])
                     roullete.style.display = 'none'
                     finish.style.display = 'flex'
                   }, 6000);
@@ -45,18 +51,24 @@ const rightText = document.querySelector('.right-text')
             play.style.display = 'none'
             bgmain.style.display = 'none'
             roullete.style.display = 'flex'
-    
-            var cards_block = document.querySelector('.cards');
-            var cards = document.querySelectorAll('.cards > .card');
-    
-            var random = Math.floor(Math.random() * (10 - 0) + 0)
+            let cards_block = document.querySelector('.cards');
+            let cards = document.querySelectorAll('.cards > .card'); 
+
+            for (let index = 0; index < cards.length; index++) {
+                let new_element = cards[index].cloneNode(true);
+                cards_block.append(new_element); 
+                
+            }
+            console.log(cards_block.children.length)
+
+            let random = Math.floor(Math.random() * (cards_block.children.length - 11) + 11)
             
-            console.log(cards[random],random)
+            console.log(cards_block.children[random],random)
             setTimeout(function() {
     
                 cards_block.style.top =Math.floor(Math.random() * (290 - 190) + 190)-random * 192 + 'px';
                 setTimeout(() => {
-                    prize.append(cards[random])
+                    prize.append(cards_block.children[random])
                     roullete.style.display = 'none'
                     finish.style.display = 'flex'
                   }, 6000);
