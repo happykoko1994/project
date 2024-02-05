@@ -639,9 +639,9 @@
         height: 63px;
     }
 }
-@media (max-height: 750px){
+@media (min-height: 600px) and (max-height: 760px){
     .akcase {
-        top: 32%;
+        top: 35%;
 
     }
     .weapon-one {
@@ -667,6 +667,72 @@
 
     .weapon-four {
         top: 51%;
+        left: 64%;
+        width: 63px;
+        height: 63px;
+    }  
+}
+@media (min-height: 760px) and (max-height: 850px){
+    .akcase {
+        top: 32%;
+
+    }
+    .weapon-one {
+        top: 24%;
+        left: 3%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-two {
+        top: 34%;
+        left: 72%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .weapon-three {
+        top: 38%;
+        left: 40%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-four {
+        top: 46%;
+        left: 64%;
+        width: 63px;
+        height: 63px;
+    }  
+}
+@media (min-height: 850px) and (max-height: 930px){
+    .akcase {
+        top: 28%;
+
+    }
+    .weapon-one {
+        top: 22%;
+        left: 3%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-two {
+        top: 31%;
+        left: 72%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .weapon-three {
+        top: 35%;
+        left: 40%;
+        width: 63px;
+        height: 63px;
+    }
+
+    .weapon-four {
+        top: 42%;
         left: 64%;
         width: 63px;
         height: 63px;
